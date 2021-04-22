@@ -1,0 +1,110 @@
+// .fa-exclamation-triangle:before {
+//   content: "";
+//   padding-right: 5px;
+// }
+
+// .fa-phone:before {
+//   content: "\f095";
+// }
+
+
+.icon-flipped {
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+}
+
+.section-break {
+  background: #f2f2f2;
+  text-align: center;
+  line-height: 30px;
+  font-size: 11px;
+}
+
+.section-1 {
+  background: url('../assets/pictures/image-1110x410.png') top right no-repeat;
+  background-attachment: fixed;
+  color: red;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: rgba(230, 130, 10, 1) !important;
+  transform: scale(2.5);
+  margin-right: 1.25rem;
+}
+
+.shadow-box {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7)
+}
+
+.shadow-text {
+  text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7)
+}
+
+.button-green {
+  padding: 20px 50px;
+  background: green;
+  border-radius: 10px;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  color: #ffa500 !important;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOC4xMjIgMjRsLTQuMTIyLTQgOC04LTgtOCA0LjEyMi00IDExLjg3OCAxMnoiLz48L3N2Zz4=) !important;
+}
+
+.carousel-control-next-icon {
+  transform: scale(3, -3);
+}
+
+.carousel-control-prev-icon {
+  transform: scale(-3, -3);
+}
+
+.bg-cover {
+  background-image: url('./assets/pictures/pumpkin-1.jpg');
+}
+
+@media (max-width: 768px) {
+  .display-2 {
+    font-size: 4.5rem!important;
+    // font-weight: 700;
+    // line-height: 1.07;
+    // margin-bottom: 1.5rem;
+  }
+  .pt-5, .py-5 {
+    padding-top: 1rem !important;
+}
+}
+
+
+
+// .swiper-button-next:after,
+// .swiper-container-rtl .swiper-button-prev:after {
+//   content: 'next';
+// }
+
+// .swiper-button-prev:after,
+// .swiper-container-rtl .swiper-button-next:after {
+//   content: 'prev';
+// }

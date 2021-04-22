@@ -1,0 +1,19 @@
+.nav-buttons {
+    border-top: 2px solid #ddd !important;
+}
+
+.dropdown-menu {
+    font-size: .8rem;
+}
+
+.dropdown-toggle::after {
+    color: #cc3333 !important;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute !important;
+        top: 35px !important;
+        background: #fff !important;
+    }
+}

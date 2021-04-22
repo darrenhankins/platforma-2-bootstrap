@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Platforma 2 Bootstrap - Design Files</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet-custom" href="./css/custom-mine.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <!-- YOUR HTML -->
+<!-- <div class="swiper">
+    <div class="swiper-container" id="slider-gallery-11">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="images-ratio ratio-16-9"
+                    style="background-image: url(./assets/pictures/corn-field.jpg)">
+                    <h1>Test</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="images-ratio ratio-16-9"
+                    style="background-image: url(./assets/pictures/image-1440x600.png)"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="images-ratio ratio-16-9"
+                    style="background-image: url(./assets/pictures/image-1440x600.png)"></div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination" id="slider-gallery-11-pagination"></div><a class="carousel-control-prev"
+        id="slider-gallery-11-prev" href="">
+        <div class="carousel-control-prev-icon"></div>
+    </a><a class="carousel-control-next" id="slider-gallery-11-next" href="">
+        <div class="carousel-control-next-icon"></div>
+    </a>
+</div> -->
+ <!-- Swiper -->
+ <div class="swiper-container">
+     <div class="swiper-wrapper">
+         <div class="swiper-slide">
+             <div class="images-ratio ratio-16-9" style="background-image: url(./assets/pictures/corn-field.jpg); width: 100%; height:100%">
+             </div>
+         </div>
+         <div class="swiper-slide">Slide 2</div>
+         <div class="swiper-slide">Slide 3</div>
+     </div>
+     <!-- <div class="swiper-pagination" id="slider-gallery-11-pagination"></div>
+    <a class="carousel-control-prev" id="slider-gallery-11-prev" href="">
+    <div class="carousel-control-prev-icon"></div>
+    </a><a class="carousel-control-next" id="slider-gallery-11-next" href="">
+    <div class="carousel-control-next-icon"></div> -->
+     <!-- Add Pagination -->
+     <div class="swiper-pagination"></div>
+     <!-- Add Arrows -->
+     <div class="swiper-button-next"></div>
+     <div class="swiper-button-prev"></div>
+     
+ </div>
+<!-- Script-->
+ <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        // dynamicBullets: true,
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+<script>
+    // var mySwiper11 = new Swiper('#slider-gallery-11', {
+    //     speed: 400,
+    //     navigation: {
+    //         nextEl: '#slider-gallery-11-next',
+    //         prevEl: '#slider-gallery-11-prev',
+    //     },
+    //     pagination: {
+    //         el: '#slider-gallery-11-pagination',
+    //         clickable: true
+    //     },
+    //     slidesPerView: 'auto'
+    // });
+</script>
+
+
+
+    <div class="bg-cover text-white" style="background: #FFA500;">
+        <div class="container">
+            <div class="row justify-content-between align-items-center py-5">
+                <div class="col-12 col-md-4 pl-md-0 mb-4 mb-md-0"><img class="w-100 shadow-box"
+                        src="" /></div>
+                <div class="col-12 col-md-7">
+                    <h1 class="display-2 shadow-text">Are you a Pumpkin Hunter?</h1>
+                    <p class="large mb-4 shadow-text">If you find enjoyment searching for your perfect pumpkin with
+                        family or friends on a beautiful fall day in Colorado, you just might be a Pumpkin Hunter. Come
+                        to Hankins Farms and hunt for your perfect Pumpkin.</p><a
+                        class="action-link text-white button-green"
+                        href=""><span>Find out when are we open</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-1">
+        <div class="container">
+            <div class="py-5">
+                <div class="row justify-content-center text-center py-3">
+                    <div class="col-12 col-md-8">
+                        <h4>Tagline</h4>
+                        <h1 class="display-4">Long headline to turn your visitors into users</h1><a class="action-link"
+                            href=""><span>Action link</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pt-12 pt-5">
+            <div class="col-12 col-md-5">
+                <h4>Tagline</h4>
+                <h1>Long headline to turn your visitors into users</h1>
+                <p>Separated they live in Bookmarksgrove right at the coast of the famous Semantics, large language
+                    ocean
+                    and many
+                    more stuff and more more more</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
